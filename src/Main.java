@@ -1,26 +1,31 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.Scanner;
+
+import apps.RandomWinners;
+
 
 public class Main {
-    public static void main(String[] args){
-        String[] names = {"Suvra", "Razvan", "Andrei", "George", "Luca", "Don", "Sumana", "Ana", "Tanishta"};
+    public static void main(String[] args) {
+        RandomWinners randomWinnersApp = new RandomWinners();
 
-        Random rand = new Random();
-        int randomNumber = 0;
+        System.out.println("Please choose one of the options below");
+        System.out.println("*** Press (1) for 'Random winners application' ***");
+        int userOption = 0;
 
-        List<Integer> winners = new ArrayList<Integer>();
-
-        System.out.println("And the winners are: ");
-        for(int i = 0; i <= 2; i++){
-            randomNumber = rand.nextInt(0,9);
-            while (winners.contains(randomNumber)){
-                randomNumber = rand.nextInt(0,9);
+        while (userOption == 0) {
+            Scanner userInputScanner = new Scanner(System.in);
+            try {
+                userOption = userInputScanner.nextInt();
+                System.out.println();
+            } catch (Exception e) {
+                System.out.println("Your option is not valid. Please try again.");
             }
-            winners.add(randomNumber);
+        }
 
-            String separator = i == 2 ? "" : ", ";
-            System.out.print(names[randomNumber] + separator);
+        switch (userOption) {
+            case 1 -> {
+                randomWinnersApp.GetRandomWinners();
+            }
+            default -> System.out.println("The option is out of range.");
         }
     }
 }
