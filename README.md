@@ -1,4 +1,4 @@
-### Release1.0 ###
+## Release 1.0 ##
 
 <ol>
 <li>Added a list of 9 names.</li>
@@ -8,11 +8,11 @@
 <li>Printing the winners to the console</li>
 </ol>
 
-### Release1.0.1 ###
+## Release 1.0.1 ##
 
 Update README.md to set new line after each phrase.
 
-### Release1.1.0 ###
+## Release 1.1.0 ##
 
 <ol>
 <li>Removed the Get random user logic form the main folder</li>
@@ -22,5 +22,13 @@ Update README.md to set new line after each phrase.
 <li>Allow the user to select an option in the console when running the app</li>
 <li>Run the app that the user opted for in the previous step</li>
 <li>Update README.md to use ordered lists when writing the release notes</li>
+</ol>
+
+## Release 1.2.0 ##
+
+<ol>
+<li>Add new application called Toss the coin</li>
+<li>New option added for user to select between the 2 apps</li>
+<li>Update readme.md style</li>
 </ol>
 
